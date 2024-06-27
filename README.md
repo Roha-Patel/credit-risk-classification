@@ -1,6 +1,6 @@
 # Overview of the Analysis 
 
-The purpose of this analysis is to create a supervised machine learning model that will predict if a loan is healthy (class 0) or high-risk (class 1). Logistic regression is used as a binary classifier for this model. The analysis was conducted on financial data, including loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, and total debt. The objective was to predict the loan status, either as a healthy loan (0) or a high-risk loan (1). The data used is a 77,500-line CSV file.
+The goal of this investigation is to develop a supervised machine learning model that can classify loans as either high-risk (class 1) or healthy (class 0). For this model, the binary classifier used is logistic regression. The analysis was conducted on financial data, including information such as loan amount, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, and total debt. The objective was to predict whether a loan will be classified as high-risk (1) or healthy (0). The dataset used for this analysis is a CSV file containing 77,500 data points.
 
 The stages of the machine learning process in this analysis included:
 
@@ -16,21 +16,22 @@ The stages of the machine learning process in this analysis included:
 
 Description of Logistic Regression Model Accuracy, Precision, and Recall scores:
 
-* Accuracy: The overall accuracy of the model is 0.99, indicating that it correctly classifies 99% of the instances.
-
+* Accuracy: 0.95
+  
 * Precision:
 
   * Healthy Loan (class 0): 1.00
   * High-Risk Loan (class 1): 0.85
-  * Recall:
+    
+* Recall:
 
   * Healthy Loan (class 0): 0.99
   * High-Risk Loan (class 1): 0.91
 
 # Summary
 
-The logistic regression model is performing very well in predicting healthy loans (class 0), with a precision of 1.00 and a recall of 0.99. For high-risk loans (class 1), the model is also doing a good job, with a precision of 0.85 and a recall of 0.91.
+With a precision of 1.00 and recall of 0.99, the logistic regression model is performing exceptionally well in predicting the healthy loans (class 0). The model continues to forecast risky loans (class 1) well, with a precision of 0.85 and recall of 0.91.
 
-The lower precision and recall in predicting the high-risk loans (class 1) could be due to the imbalanced dataset, as the testing data for class 1 only has 619 instances, compared to 18,765 for class 0. This suggests that the model has fewer examples of high-risk loans to learn from, which may limit its performance in this class.
+Given that the support test data for class 1 is just 619—a very low number when compared to 18,765 for class 0—the imbalanced dataset may be the source of the reduced precision and recall in forecasting the high-risk loans (class 1). Predicting high-risk loans could still use some work. Put another way, relative to the quantity of healthy loans in the data set, there are comparatively few high-risk loans for the model to learn from. The model might be improved if more high-risk loan examples were included in the training data.
 
-For loan classification, preventing high-risk loans is more important than approving healthy loans, as a single defaulted loan can result in greater financial losses than the interest earned from a healthy loan. The overall high accuracy of 99% indicates that this model is a strong candidate for use in credit risk classification.
+In the process of classifying loans, preventing high-risk loans is more crucial than actually making loans, as the loss of money from a single default can be greater than the interest received. The model's overall accuracy is high, at 99%.
