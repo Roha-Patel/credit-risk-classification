@@ -20,12 +20,12 @@ Description of Logistic Regression Model Accuracy, Precision, and Recall scores:
 
 * Precision:
 
-..*Healthy Loan (class 0): 1.00
-..*High-Risk Loan (class 1): 0.85
-..*Recall:
+  * Healthy Loan (class 0): 1.00
+  * High-Risk Loan (class 1): 0.85
+  * Recall:
 
-..*Healthy Loan (class 0): 0.99
-..*High-Risk Loan (class 1): 0.91
+  * Healthy Loan (class 0): 0.99
+  * High-Risk Loan (class 1): 0.91
 
 # Summary
 
