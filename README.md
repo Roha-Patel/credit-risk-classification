@@ -4,28 +4,28 @@ The purpose of this analysis is to create a supervised machine learning model th
 
 The stages of the machine learning process in this analysis included:
 
-Splitting data into labels and features, with the loan status (healthy or high-risk) as the label and the remaining seven columns as features.
-Splitting the data into training and testing datasets.
-Creating a Logistic Regression model from sklearn.
-Choosing Logistic Regression as a binary classifier since we are classifying loans as healthy OR high-risk.
-Training the model with the training data.
-Making predictions with the test data.
-Evaluating the model's performance using accuracy, precision, and recall scores.
+* Splitting data into labels and features, with the loan status (healthy or high-risk) as the label and the remaining seven columns as features.
+* Splitting the data into training and testing datasets.
+* Creating a Logistic Regression model from sklearn.
+* Choosing Logistic Regression as a binary classifier since we are classifying loans as healthy OR high-risk.
+* Training the model with the training data.
+* Making predictions with the test data.
+* Evaluating the model's performance using accuracy, precision, and recall scores.
 
 # Results 
 
 Description of Logistic Regression Model Accuracy, Precision, and Recall scores:
 
-Accuracy: The overall accuracy of the model is 0.99, indicating that it correctly classifies 99% of the instances.
+* Accuracy: The overall accuracy of the model is 0.99, indicating that it correctly classifies 99% of the instances.
 
-Precision:
+* Precision:
 
-Healthy Loan (class 0): 1.00
-High-Risk Loan (class 1): 0.85
-Recall:
+..*Healthy Loan (class 0): 1.00
+..*High-Risk Loan (class 1): 0.85
+..*Recall:
 
-Healthy Loan (class 0): 0.99
-High-Risk Loan (class 1): 0.91
+..*Healthy Loan (class 0): 0.99
+..*High-Risk Loan (class 1): 0.91
 
 # Summary
 
