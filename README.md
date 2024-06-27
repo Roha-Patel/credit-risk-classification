@@ -34,5 +34,3 @@ The logistic regression model is performing very well in predicting healthy loan
 The lower precision and recall in predicting the high-risk loans (class 1) could be due to the imbalanced dataset, as the testing data for class 1 only has 619 instances, compared to 18,765 for class 0. This suggests that the model has fewer examples of high-risk loans to learn from, which may limit its performance in this class.
 
 For loan classification, preventing high-risk loans is more important than approving healthy loans, as a single defaulted loan can result in greater financial losses than the interest earned from a healthy loan. The overall high accuracy of 99% indicates that this model is a strong candidate for use in credit risk classification.
-
-GPT-4o&Web Access
